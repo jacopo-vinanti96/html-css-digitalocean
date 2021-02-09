@@ -4,7 +4,7 @@
 
 /* MIX */
 .logo {
-  width:100%;
+  width:165px;
 }
 
 ul {
@@ -58,9 +58,11 @@ header .top_bar {
   background-color: red;
   padding: 40px 0 20px;
   vertical-align: middle;
+  color: black;
+  width: 100%;
 }
 
-header .top_bar nav {
+header .top_bar nav:not(.nested_nav) {
   margin-top: 7px;
 }
 
@@ -70,4 +72,42 @@ header .top_bar .signup_btn {
   color: #006AFF;
   border: 1px solid #006AFF;
   border-radius: 5px;
+}
+
+header .top_bar .signup_btn:hover {
+  color: white;
+  background-color: #006AFF;
+}
+
+header .top_bar .hamburger_col {
+  display: none;
+}
+
+header .top_bar .hamburger_col button {
+  margin-top: 7px;
+  border: none;
+  background-color: transparent;
+  line-height: 16px;
+}
+
+header .top_bar .hamburger_col i {
+  font-size: 20px;
+  color: #006AFF;
+}
+
+/* Responsive */
+@media screen and (max-width:991px) {
+  header .top_bar .hamburger_col {
+    display: inline;
+  }
+
+  header .row> *:not(.hamburger_col):not(:first-child) {
+    display: none;
+  }
+}
+
+@media screen and (max-width:767px) {
+  header .logo {
+    max-width: 100%;
+  }
 }
