@@ -27,9 +27,19 @@ color: #006AFF;
   color: #68748F;
 }
 
+.textlg_color {
+  color: #6E7993;
+}
+
 .spacing_fix {
   font-size: 0;
 }
+
+/* Focus chrome fix */
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
 
 /* Features box */
 .features_box img {
@@ -68,6 +78,15 @@ header .top_bar a:hover {
 h1 {
   font-size: 50px;
   font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+h2 ~ p {
+font-size: 21px;
 }
 
 /* Dropdown links */
@@ -186,6 +205,10 @@ header .top_bar .hamburger_col i {
   margin-left: 40px;
 }
 
+.hero .account_box h2 {
+  font-size: 30px;
+}
+
 .create_account_btn, .signup_google_btn {
   display: block;
   text-align: center;
@@ -276,18 +299,15 @@ header .top_bar .hamburger_col i {
 
 /* MAIN */
 
-.deploy_section {
+main section {
   padding: 50px 0;
 }
 
-.deploy_section h2 {
-  font-weight: 700;
-  font-size: 35px;
-}
+/* Deploy section */
 
 .deploy_section p {
-  font-size: 21px;
   margin-bottom: 40px;
+  color: #53617E;
 }
 
 .deploy_section ul {
@@ -317,4 +337,47 @@ header .top_bar .hamburger_col i {
 
 .deploy_section .features_box p {
   font-size: 15px;
+}
+
+/* Carousel section */
+
+.carousel_section h2 {
+  padding-bottom: 20px;
+}
+
+.carousel_section p {
+  padding-bottom: 60px;
+}
+
+.carousel_section .carousel_img {
+  width: 50%;
+  margin: 0 20px 30px;
+}
+
+.carousel_section .carousel_arrow {
+  border: none;
+  background-color: transparent;
+  font-size: 60px;
+}
+
+.carousel_section .carousel_dot {
+  border-radius: 50%;
+  border: 1px solid #006AFF;
+  background-color: transparent;
+  height: 10px;
+  width: 10px;
+  padding: 0;
+}
+
+.carousel_section .carousel_dot:focus {
+  border: 1px solid #006AFF;
+  background-color: #006AFF;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 767px) {
+  .carousel_section .carousel_arrow {
+    display: none;
+  }
 }
