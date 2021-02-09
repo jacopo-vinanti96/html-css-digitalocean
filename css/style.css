@@ -43,10 +43,6 @@ color: #006AFF;
 
 /* Features box */
 
-.features_box {
-  padding-bottom: 40px;
-}
-
 .features_box img {
   height: 40px;
 }
@@ -64,6 +60,8 @@ color: #006AFF;
 
 .features_box a {
   color: #006AFF;
+  margin-bottom: 30px;
+  display: block;
 }
 
 .features_box a:hover {
