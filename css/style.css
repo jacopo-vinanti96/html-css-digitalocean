@@ -56,6 +56,14 @@ color: #006AFF;
   color: #6E7993;
 }
 
+.features_box a {
+  color: #006AFF;
+}
+
+.features_box a:hover {
+  color: #006AFF;
+}
+
 /* TYPO */
 
 a:focus {
@@ -380,4 +388,10 @@ main section {
   .carousel_section .carousel_arrow {
     display: none;
   }
+}
+
+/* Features section */
+
+.features_section h2 {
+  padding-bottom: 20px;
 }
