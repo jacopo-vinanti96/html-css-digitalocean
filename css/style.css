@@ -11,7 +11,19 @@ ul {
   margin-bottom: 0;
 }
 
+.textb_color {
+color: #006AFF;
+}
+
+.textw_color {
+  color: white;
+}
+
 /* TYPO */
+
+a:focus {
+  text-decoration: none;
+}
 
 header .top_bar a {
   color: black;
@@ -20,6 +32,11 @@ header .top_bar a {
 header .top_bar a:hover {
   color: black;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
 }
 
 /* Dropdown links */
@@ -43,11 +60,16 @@ details ul {
   position: absolute;
   background-color: white;
   z-index: 5;
-  width: 150px;
+  border: 1px solid black;
+  padding: 10px 40px;
 }
 
-details a {
-  background-color: white;
+details li:hover {
+  text-shadow: 0 0 6px #006AFF;
+}
+
+details li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 /* HEADER */
@@ -55,7 +77,7 @@ details a {
 /* Top-bar */
 
 header .top_bar {
-  background-color: red;
+  background-color: white;
   padding: 40px 0 20px;
   vertical-align: middle;
   color: black;
@@ -69,9 +91,9 @@ header .top_bar nav:not(.nested_nav) {
 header .top_bar .signup_btn {
   padding: 8px 12px;
   background-color: transparent;
-  color: #006AFF;
   border: 1px solid #006AFF;
   border-radius: 5px;
+  color: #006AFF;
 }
 
 header .top_bar .signup_btn:hover {
@@ -92,7 +114,6 @@ header .top_bar .hamburger_col button {
 
 header .top_bar .hamburger_col i {
   font-size: 20px;
-  color: #006AFF;
 }
 
 /* Responsive */
@@ -101,7 +122,7 @@ header .top_bar .hamburger_col i {
     display: inline;
   }
 
-  header .row> *:not(.hamburger_col):not(:first-child) {
+  header .top_bar .row> *:not(.hamburger_col):not(:first-child) {
     display: none;
   }
 }
@@ -110,4 +131,62 @@ header .top_bar .hamburger_col i {
   header .logo {
     max-width: 100%;
   }
+}
+
+/* Hero */
+
+.hero {
+  margin-top: 91.52px;
+  background-image: url(../img/bg-home-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+.hero .hero_text p {
+  font-size: 20px;
+}
+
+.hero .account_box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin-left: 40px;
+}
+
+.create_account_btn, .signup_google_btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.create_account_btn {
+  background-color: #5899FD;
+  color: white;
+  border: none;
+  padding:5px 0;
+  border-radius: 4px;
+}
+
+.signup_google_btn {
+  color: black;
+  text-decoration: none;
+  padding:5px 0;
+  box-shadow: 2px 2px 1px lightgrey;
+  border-radius: 4px;
+  font-weight: 700;
+  background-image: url(../img/google-icon.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.signup_google_btn:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.signup_google_btn:focus {
+  color: black;
 }
