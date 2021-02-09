@@ -1,0 +1,73 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* MIX */
+.logo {
+  width:100%;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+/* TYPO */
+
+header .top_bar a {
+  color: black;
+}
+
+header .top_bar a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Dropdown links */
+details {
+  position: relative;
+}
+
+details summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details p {
+  position: absolute;
+}
+
+details ul {
+  position: absolute;
+  background-color: white;
+  z-index: 5;
+  width: 150px;
+}
+
+details a {
+  background-color: white;
+}
+
+/* HEADER */
+
+/* Top-bar */
+
+header .top_bar {
+  background-color: red;
+  padding: 40px 0 20px;
+  vertical-align: middle;
+}
+
+header .top_bar nav {
+  margin-top: 7px;
+}
+
+header .top_bar .signup_btn {
+  padding: 8px 12px;
+  background-color: transparent;
+  color: #006AFF;
+  border: 1px solid #006AFF;
+  border-radius: 5px;
+}
