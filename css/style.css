@@ -292,6 +292,8 @@ header .top_bar .hamburger_col i {
 
 .deploy_section ul {
   list-style: none;
+  margin-bottom: 40px;
+  padding-left: 0;
 }
 
 .deploy_section ul button {
@@ -311,4 +313,8 @@ header .top_bar .hamburger_col i {
 .deploy_section ul button:focus {
   color: black;
   border-left: 1px solid black;
+}
+
+.deploy_section .features_box p {
+  font-size: 15px;
 }
