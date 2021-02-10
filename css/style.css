@@ -461,3 +461,42 @@ main section {
     float: none;
   }
 }
+
+/* 2nd carousel section */
+
+.carousel_section .carousel_box {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin: 60px 20px 30px;
+  background-color: white;
+  padding: 40px 0;
+}
+
+.carousel_section .carousel_box img {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.carousel_section .carousel_box p {
+  color: #011447;
+  padding-bottom: 0;
+}
+
+.carousel_section .carousel_box q {
+  font-size: 21px;
+  padding-bottom: 20px;
+  border-left: none;
+  display: block;
+  color: #53617E;
+}
+
+.carousel_section .carousel_box span {
+  font-weight: 700;
+  display: block;
+}
+
+.carousel_section .carousel_box a {
+  margin: 25px 0;
+  display: block;
+}
