@@ -31,6 +31,10 @@ color: #006AFF;
   color: #6E7993;
 }
 
+.textlb_color {
+  color: #BECBEB;
+}
+
 .spacing_fix {
   font-size: 0;
 }
@@ -40,6 +44,17 @@ color: #006AFF;
     outline: -webkit-focus-ring-color auto 0px;
 }
 
+.arrow_link,
+.arrow_link:focus,
+.arrow_link:hover,
+.arrow_link:visited  {
+  color: #006AFF;
+}
+
+.arrow_link::after {
+  content: "\003E";
+  margin-left: 8px;
+}
 
 /* Features box */
 
@@ -59,13 +74,8 @@ color: #006AFF;
 }
 
 .features_box a {
-  color: #006AFF;
   margin-bottom: 30px;
   display: block;
-}
-
-.features_box a:hover {
-  color: #006AFF;
 }
 
 /* TYPO */
@@ -84,7 +94,6 @@ header .top_bar a {
 
 header .top_bar a:hover {
   color: black;
-  text-decoration: none;
 }
 
 h1 {
@@ -140,7 +149,7 @@ details li:not(:last-child) {
 
 header .top_bar {
   background-color: white;
-  padding: 40px 0 20px;
+  padding: 15px 0 15px;
   vertical-align: middle;
   color: black;
   width: 100%;
@@ -198,7 +207,7 @@ header .top_bar .hamburger_col i {
 /* Hero */
 
 .hero {
-  margin-top: 91.52px;
+  margin-top: 61.52px;
   background-image: url(../img/bg-home-hero.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -398,4 +407,57 @@ main section {
 
 .features_section h2 {
   padding-bottom: 20px;
+}
+
+/* Regions section */
+
+.regions_section {
+  background: rgb(3,67,191);
+  background: linear-gradient(180deg, rgba(3,67,191,1) 0%, rgba(9,9,121,1) 100%);
+}
+
+.regions_section ul {
+  margin-top: 15px;
+}
+
+.regions_section li {
+  padding: 10px;
+}
+
+.regions_section li:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+
+.regions_section li > * {
+  display: inline-block;
+}
+
+.regions_section li span {
+  float: left;
+  width: 17%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.regions_section li p {
+  margin-bottom: 0;
+}
+
+.regions_section li a {
+  float: right;
+}
+
+/* Responsive */
+
+@media screen and (max-width:991px) {
+  .regions_section ul:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .regions_section li a {
+    display: block;
+    float: none;
+  }
 }
