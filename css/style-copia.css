@@ -624,7 +624,6 @@ width: 420px;
 }
 
 .msg_overflow {
-  overflow: scroll;
   max-height: 50px;
 }
 
@@ -705,6 +704,11 @@ width: 420px;
     width: 100%;
     height: 120%;
     max-width: 50px;
+  }
+
+  .msg_overflow {
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .shark_popup {
