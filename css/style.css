@@ -78,6 +78,19 @@ color: #006AFF;
   display: block;
 }
 
+.signup_btn {
+  padding: 8px 12px;
+  background-color: white;
+  border: 1px solid #006AFF;
+  border-radius: 5px;
+  color: #006AFF;
+}
+
+.signup_btn:hover {
+  color: white;
+  background-color: #006AFF;
+}
+
 /* TYPO */
 
 a:focus {
@@ -88,11 +101,11 @@ a:hover {
   text-decoration: none;
 }
 
-header .top_bar a {
+header .top_bar a:not(.signup_btn) {
   color: black;
 }
 
-header .top_bar a:hover {
+header .top_bar a:not(.signup_btn):hover {
   color: black;
 }
 
@@ -159,19 +172,6 @@ header .top_bar nav:not(.nested_nav) {
   margin-top: 7px;
 }
 
-header .top_bar .signup_btn {
-  padding: 8px 12px;
-  background-color: transparent;
-  border: 1px solid #006AFF;
-  border-radius: 5px;
-  color: #006AFF;
-}
-
-header .top_bar .signup_btn:hover {
-  color: white;
-  background-color: #006AFF;
-}
-
 header .top_bar .hamburger_col {
   display: none;
 }
@@ -211,7 +211,7 @@ header .top_bar .hamburger_col i {
   background-image: url(../img/bg-home-hero.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .hero .hero_text p {
@@ -222,19 +222,29 @@ header .top_bar .hamburger_col i {
 .hero .account_box {
   background-color: white;
   border-radius: 10px;
-  padding: 20px 40px;
+  padding: 20px 40px 30px;
   margin-left: 40px;
+  max-width: 515px;
 }
 
 .hero .account_box h2 {
   font-size: 30px;
 }
 
+.hero .account_box h2 span {
+  display: block;
+  margin-top: 10px;
+}
+
+.hero .account_box div.form-group {
+  margin-bottom: 10px;
+}
+
 .create_account_btn, .signup_google_btn {
   display: block;
   text-align: center;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .create_account_btn {
@@ -250,6 +260,7 @@ header .top_bar .hamburger_col i {
   text-decoration: none;
   padding:5px 0;
   box-shadow: 2px 2px 1px lightgrey;
+  border: 1px solid lightgrey;
   border-radius: 4px;
   font-weight: 700;
   background-image: url(../img/google-icon.png);
@@ -268,10 +279,15 @@ header .top_bar .hamburger_col i {
 }
 
 /* Responsive */
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 40px;
+  }
+}
 
 @media screen and (max-width:767px) {
   .hero .account_box {
-    margin-left: 0;
+    margin: auto;
   }
 }
 
@@ -310,6 +326,7 @@ header .top_bar .hamburger_col i {
 @media screen and (max-width: 767px) {
   .sponsors img {
     width: calc(100%/2 - 50px);
+    max-width: 230px;
     vertical-align: middle;
   }
 
@@ -499,4 +516,77 @@ main section {
 .carousel_section .carousel_box a {
   margin: 25px 0;
   display: block;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+  .carousel_section .carousel_box {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel_section .carousel_box {
+    width: 90%;
+  }
+}
+
+/* Get started section */
+.get_started {
+  background: rgb(3,67,191);
+  background: linear-gradient(180deg, rgba(2,61,182,1) 0%, rgba(5,25,150,1) 100%);
+}
+
+.get_started .signup_btn {
+  margin-top: 30px;
+  border: none;
+  display: inline-block;
+}
+
+/* FOOTER */
+footer {
+  background-color: #011447;
+  padding: 50px 0;
+}
+
+footer .social_copyright img {
+  width: 50px;
+}
+
+footer .social_copyright p {
+  padding: 15px 0;
+  margin:0;
+}
+
+footer .social_copyright p span,
+footer .social_copyright .fab {
+  color: #4F5E7B;
+}
+
+footer .social_copyright .fab {
+  font-size: 18px;
+}
+
+footer .social_copyright .fab:hover,
+footer .social_copyright .fab:focus {
+  color:white;
+}
+
+footer h4 {
+  font-weight: 700;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+footer ul:not(.list-inline) li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+footer a {
+  color: currentcolor;
+}
+
+footer a:hover,
+footer a:focus {
+  color: white;
 }
