@@ -47,7 +47,7 @@ color: #006AFF;
 
 /* Focus chrome fix */
 :focus {
-    outline: -webkit-focus-ring-color auto 0px;
+  outline: -webkit-focus-ring-color auto 0px;
 }
 
 .arrow_link,
@@ -507,7 +507,7 @@ main section {
 }
 
 .carousel_section .carousel_box q {
-  font-size: 21px;
+  font-size: 20px;
   padding-bottom: 20px;
   border-left: none;
   display: block;
@@ -526,14 +526,14 @@ main section {
 
 /* Responsive */
 @media screen and (max-width: 991px) {
-  .carousel_section .carousel_box {
-    width: 75%;
+  .carousel_section .carousel_box img {
+    width: 85%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .carousel_section .carousel_box {
-    width: 90%;
+  .carousel_section .carousel_box img {
+    width: 100%;
   }
 }
 
@@ -600,26 +600,10 @@ footer a:focus {
 /* Shark popup */
 
 .shark_popup {
-position: fixed;
-bottom: 20px;
-right: 20px;
-}
-
-.pull {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.push {
-  position: absolute;
+  position: fixed;
   right: 0;
-  bottom: 0;
-}
-
-.shark_msg, .shark_img {
-  display: inline-block;
-  vertical-align: bottom;
+  bottom: 20px;
+  width: 420px;
 }
 
 .shark_msg {
@@ -631,6 +615,11 @@ right: 20px;
   color: #011447;
   position: relative;
   left:0;
+  max-height: 60px;
+}
+
+.msg_overflow {
+  max-height: 50px;
 }
 
 .shark_msg::after {
@@ -647,6 +636,7 @@ right: 20px;
 }
 
 .shark_img {
+  margin-top: 10px;
   width: 50px;
   height: 50px;
   background-color: #0B68FC;
@@ -679,4 +669,44 @@ right: 20px;
   width: 25px;
   height: 25px;
   line-height: 17px;
+}
+
+/* Responsive */
+
+@media screen and (max-width:991px) {
+  .shark_popup {
+    left: 0;
+    right: auto;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .shark_msg {
+    width: calc(9/12 * 100%);
+    max-width: 180px;
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .shark_img {
+    width: calc(3/12 * 100%);
+    height: 9vw;
+    max-height: 50px;
+    max-width: 50px;
+  }
+
+  .shark_img img {
+    width: 100%;
+    height: 120%;
+    max-width: 50px;
+  }
+
+  .msg_overflow {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .shark_popup {
+    max-width: 60%
+  }
 }
