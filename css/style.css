@@ -602,8 +602,12 @@ footer a:focus {
 .shark_popup {
   position: fixed;
   right: 0;
-  bottom: 20px;
+  bottom: 15px;
   width: 420px;
+}
+
+.shark_msg, .shark_img {
+  margin-bottom: 25px;
 }
 
 .shark_msg {
