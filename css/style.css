@@ -35,21 +35,6 @@ color: #006AFF;
   color: #BECBEB;
 }
 
-.spacing_fix {
-  font-size: 0;
-}
-
-.clearfix {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* Focus chrome fix */
-:focus {
-  outline: -webkit-focus-ring-color auto 0px;
-}
-
 .arrow_link,
 .arrow_link:focus,
 .arrow_link:hover,
@@ -60,6 +45,21 @@ color: #006AFF;
 .arrow_link::after {
   content: "\003E";
   margin-left: 8px;
+}
+
+/* Fix classes */
+.spacing_fix {
+  font-size: 0;
+}
+
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
 }
 
 /* Features box */
@@ -105,14 +105,6 @@ a:focus {
 
 a:hover {
   text-decoration: none;
-}
-
-header .top_bar a:not(.signup_btn) {
-  color: black;
-}
-
-header .top_bar a:not(.signup_btn):hover {
-  color: black;
 }
 
 h1 {
@@ -172,6 +164,14 @@ header .top_bar {
 
 header .top_bar nav:not(.nested_nav) {
   margin-top: 7px;
+}
+
+header .top_bar a:not(.signup_btn) {
+  color: black;
+}
+
+header .top_bar a:not(.signup_btn):hover {
+  color: black;
 }
 
 header .top_bar .hamburger_col details {
@@ -282,14 +282,14 @@ header .top_bar .hamburger_col i {
   background-color: #5899FD;
   color: white;
   border: none;
-  padding:5px 0;
+  padding: 5px 0;
   border-radius: 4px;
 }
 
 .signup_google_btn {
   color: black;
   text-decoration: none;
-  padding:5px 0;
+  padding: 5px 0;
   box-shadow: 2px 2px 1px lightgrey;
   border: 1px solid lightgrey;
   border-radius: 4px;
@@ -427,6 +427,8 @@ main section {
   border: none;
   background-color: transparent;
   font-size: 60px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .carousel_section .carousel_dot {
@@ -512,11 +514,15 @@ main section {
 
 /* 2nd carousel section */
 
+.carousel_section h2 {
+  margin-bottom: 30px;
+}
+
 .carousel_section .carousel_box {
   display: inline-block;
   vertical-align: middle;
   width: 50%;
-  margin: 60px 20px 30px;
+  margin: 30px 20px 30px;
   background-color: white;
   padding: 70px 0;
 }
@@ -655,16 +661,6 @@ footer a:focus {
 .msg_overflow {
   max-height: 50px;
 }
-
-/* .shark_msg::before {
-  width: 2px;
-  height: 15px;
-  content: "";
-  position: absolute;
-  right: -2px;
-  bottom: 9px;
-  background-color: white;
-} */
 
 .shark_msg::before {
   content: "";
