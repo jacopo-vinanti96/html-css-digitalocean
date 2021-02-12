@@ -624,23 +624,47 @@ footer a:focus {
   position: relative;
   left:0;
   max-height: 60px;
+  box-shadow: 0 0 2px #011141;
 }
 
 .msg_overflow {
   max-height: 50px;
 }
 
-.shark_msg::after {
-  width: 0;
-  height: 0;
+/* .shark_msg::before {
+  width: 2px;
+  height: 15px;
   content: "";
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid white;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: translate(60%, -30%);
+  right: -2px;
+  bottom: 9px;
+  background-color: white;
+} */
+
+.shark_msg::before {
+  content: "";
+  border-bottom: 5px solid white;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	height: 2px;
+	width: 20px;
+  position: absolute;
+  right: -11px;
+  bottom: 14px;
+  transform: rotate(90deg);
+}
+
+.shark_msg::after {
+  width: 13px;
+  height: 13px;
+  content: "";
+  position: absolute;
+  right: -7px;
+  bottom: 10px;
+  transform: rotate(45deg);
+  background-color: white;
+  box-shadow: 0px 0px 2px 0px #011141;
+  z-index: -1;
 }
 
 .shark_img {
